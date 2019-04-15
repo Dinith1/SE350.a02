@@ -7,7 +7,6 @@ body {
 #container {
     align-content: inline-block;
     flex-direction: row;
-
     display: flex;
     background-color: #393D3F;
     height: 100%;
@@ -20,6 +19,7 @@ body {
     border-style: solid;
     border-width: 0 2 0 0;
     text-align: center;
+    margin-top: -40px;
 }
 
 #menu-bottom {
@@ -42,9 +42,21 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 25px;
+    border-width: 3px;
     border-radius: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#group-create {
+    border-style: dashed;
+    border-width: 2;
+}
 
+.group:hover {
+    transform: scale(1.1);
+}
+
+.devs:hover {
+    transform: scale(1.1);
 }
 
 #task-board {
@@ -69,4 +81,23 @@ body {
 .devs {
     width: 200px;
     height: 200px;
+}
+
+#workspace-select {
+    display: flex;
+    width: 100%;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-bottom: 30px;
+    padding: 5 0 5 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#workspace-select-devs {
+    margin: auto;
+}
+
+#workspace-select-arrow {
+    margin-right: 3px;
 }
