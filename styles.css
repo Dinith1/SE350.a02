@@ -131,6 +131,19 @@ body {
     margin-left: -8px;
 }
 
+.extra-members {
+    margin-left: -8px;
+    color:white;
+    border-style: solid;
+    background-color: rgba(173, 173, 173, 0.849);
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
 .priority {
     margin: 10 3 0 0;
     color:rgb(27, 95, 100);
@@ -180,6 +193,7 @@ body {
   min-width: 250px;
   overflow: hidden;
   background-color: rgb(204, 204, 204);
+  overflow-y:scroll;
 }
 
 .task-board-title {
