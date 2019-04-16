@@ -1,3 +1,5 @@
+/* CSS for taskboard section */
+
 .action-footer {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +13,6 @@
 body {
     padding: 0;
     margin: 0;
-    color: white;
 }
 
 #container {
@@ -22,6 +23,7 @@ body {
     width: auto;
     height: 100%;
     cursor: default;
+    color: white;
 }
 
 #group-menu {
@@ -319,6 +321,80 @@ body {
     align-self: center;
 }
 
+/* CSS for Whiteboard Section */
+#whiteboard-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  cursor: default;
+}
+
+#live-whiteboard {
+  display: flex;
+  flex-direction: column;
+  flex: 8;
+}
+
+#whiteboard {
+  flex: 20;
+}
+
+#whiteboard-title {
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+#whiteboard-screen {
+  margin-top: 30px;
+
+  height:500px;
+}
+
+#back-button {
+  color: black;
+  font-size: 50px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
+
+#whiteboard-toolbar {
+  flex: 2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: slategray;
+  text-align: center;
+  border-width: 3 3 0 3;
+  border-radius: 3px;
+  border-style: solid;
+}
+
+#toolbar-icon {
+  font-size: 40px;
+  margin-left: 20px;
+  margin-top: 10px;;
+  color: black;
+}
+
+#toolbar-icon:hover {
+  transform: scale(1.1);
+}
+
+#task-details {
+  flex: 2;
+  position: relative;
+  border-left-width: 5px;
+  border-left-style: solid;
+  background-color: bisque;
+}
+
+.task-details {
+  margin-top: 20px;
+}
 .invite-button {
     width: 70px;
     height: 28px;
