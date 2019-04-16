@@ -235,6 +235,8 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     align-content: flex-start;
+    flex-direction: row;
+    display: flex;
 }
 
 .task-category-header {
@@ -434,6 +436,22 @@ body {
     font-size: 30px;
     justify-content: center;
     align-self: center;
+}
+
+#team {
+    padding-bottom: 10px;
+    background-color: blue;
+}
+
+#add-task {
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    align-self: center;
+    border-left-style: solid;
+    border-left-color: grey;
+    border-left-width: 2px;
+    padding-left: 10px;
 }
 
 /* CSS for Whiteboard Section */
