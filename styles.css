@@ -140,6 +140,7 @@ body {
     height: 30px;
     width: 30px;
     border-radius: 30px;
+    border-width: 3px;
     text-align: center;
     font-family: sans-serif;
     font-weight: bolder;
