@@ -146,7 +146,7 @@ body {
     align-items: center;
 }
 .taskboard-create{
-    margin-left:80px;
+    margin-left:100px;
     border-radius: 80px;
     size: 80px;
     height: 80px;
@@ -165,7 +165,7 @@ body {
         margin: 30 10 0 10;
         height: 80%;
         min-width: 250px;
-        max-width: 350px;
+        max-width: 500px;
         overflow: hidden;
         align-items: center;
         }
@@ -186,7 +186,7 @@ body {
   box-shadow:rgba(0, 0, 0, 0.623);
   height: 80%;
   min-width: 250px;
-  max-width:  350px;
+  max-width:  500px;
   overflow: hidden;
   background-color: rgb(204, 204, 204);
 }
