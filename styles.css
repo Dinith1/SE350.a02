@@ -144,19 +144,26 @@ body {
 }
 
 .taskboard-section {
-  text-align: center;
   flex: 1;
-  margin: 0 10 0 10;
-  color: black;
+  margin: 30 10 0 10;
   border-width: 3px;
   border-style: solid;
-  border-color: white;
-  border-radius: 15px;
-  box-shadow:black;
+  border-color: rgb(204, 204, 204);
+  border-radius: 10px;
+  box-shadow:rgba(0, 0, 0, 0.623);
   height: 80%;
   min-width: 250px;
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(204, 204, 204);
+}
+
+.task-board-title {
+    padding: 15 10 10 15;
+    color: rgb(53, 53, 53);
+    font-family: sans-serif;
+    font-weight: bold;
+    align-content: flex-start;
+    
 }
 
 #file-menu {
@@ -297,6 +304,8 @@ body {
 #heart {
     color: red;
     font-size: 30px;
+    justify-content: center;
+    align-self: center;
 }
 
 .invite-button {
@@ -310,10 +319,16 @@ body {
     margin-right: 20px;
     justify-content: center;
     font-family: sans-serif;
-    color: white;
+    color: rgb(27, 95, 100);
 }
 
+.invite-button:hover {
+    transform: scale(1.05);
+    background-color: rgb(27, 95, 100);
+  }
+
 #invite-text {
+    color: white;
     padding-top: 5px;
     text-align: center;
     margin: auto;
