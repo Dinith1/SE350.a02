@@ -10,6 +10,7 @@ body {
     display: flex;
     background-color: #393D3F;
     height: 100%;
+    cursor: default;
 }
 
 #group-menu {
@@ -61,13 +62,63 @@ body {
 
 #task-board {
     flex: 10;
-    border-style: solid;
-    border-width: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #task-board-header {
     background-color: bisque;
-    height: 10%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#task-board-title {
+  flex: 4;
+  justify-content: center;
+  color: black;
+  align-items: center;
+}
+
+#members-list {
+  flex: 6;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.team-member {
+  color: black;
+}
+
+.member-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+}
+
+#task-board-body {
+  flex: 8;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 850px;
+  overflow-x:scroll;
+  position:relative;
+  padding: 10 10 0 10;
+}
+
+.taskboard-section {
+  text-align: center;
+  margin: 0 10 0 0;
+  color: black;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  height: 80%;
+  min-width: 250px;
+  overflow: hidden;
+  background-color: white;
 }
 
 #file-menu {
@@ -109,7 +160,7 @@ body {
     border-width: 0 0 2 0;
     height: 100px;
     border-style: solid;
-    
+
 }
 
 #profile-pic {
@@ -120,14 +171,59 @@ body {
     border-radius: 60px;
 }
 
+#online-status {
+    color: green;
+    font-size: 15px;
+    position: absolute;
+    margin: -35 0 0 65;
+}
+
 #fullscreen-icon {
     position: absolute;
     right: 5;
 }
 
+#fullscreen {
+  font-size: 30px;
+}
+
+#fullscreen:hover {
+  transform: scale(1.1);
+}
 #file-menu-bottom {
     display: flex;
     flex-direction: column;
+
+}
+
+#file-title {
+  padding-bottom: 20px;
+  padding-top: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  margin: auto;
+}
+
+.file {
+    margin: 3 0 0 0 ;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.file:hover {
+  transform: scale(1.05);
+}
+
+#filename {
+  font-size: 15px;
+}
+
+#file-icon {
+  font-size: 20px;
+  padding-right: 8px;
 }
 
 #add-file-icon {
@@ -136,12 +232,6 @@ body {
     right: 5;
 }
 
-.filename {
-    margin: 3 0 0 0 ;
-    border-width: 0 0 1 0;
-    border-style: solid;
-    width: 100%;
-    height: 30px;
+#attach-file {
+  font-size: 40px;
 }
-
-

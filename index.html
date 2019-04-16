@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MisCom</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -29,29 +30,69 @@
         </div>
 
         <div id="task-board">
-            <header id="task-board-header">
+            <div id="task-board-header">
+              <div id="task-board-title">
+                Marketing
+              </div>
+              <div id="members-list">
+                <div class="team-member">
+                  <div id="logo"><img class="member-logo" src="maya_watermelon.jpg"></div>
+                </div>
+                <div class="team-member">
+                  <div id="logo"><img class="member-logo" src="maya_watermelon.jpg"></div>
+                </div>
+                <div class="team-member">
+                  <div id="logo"><img class="member-logo" src="maya_watermelon.jpg"></div>
+                </div>
+                <div class="team-member">
+                  Invite
+                </div>
+              </div>
+            </div>
+            <div id="task-board-body">
+              <div class="taskboard-section">
+                To do
+              </div>
+              <div class="taskboard-section">
+                In progress
+              </div>
+              <div class="taskboard-section">
+                Completed
+              </div>
+              <div class="taskboard-section">
+                To review
+              </div>
 
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nesciunt libero minima nihil quod
-                vero magni, quae neque reiciendis esse reprehenderit excepturi ratione expedita itaque accusamus maxime
-                dignissimos. Possimus, expedita?</p>
+            </div>
         </div>
 
         <div id="file-menu" class="right-tab">
             <div id="file-menu-top">
                 <div id="profile-pic-div">
                     <img id="profile-pic" src="maya_watermelon.jpg" alt="">
+                    <i class="material-icons" id="online-status">brightness_1</i>
                 </div>
                 <div id="fullscreen-icon">
-
+                  <i class="material-icons" id="fullscreen">fullscreen</i>
                 </div>
             </div>
             <div id="file-menu-bottom">
-                <div id="file-title">FILES</div>
-                <div class="filename">asdf</div>
-                <div class="filename">asdf</div>
-                <div class="filename">asdf</div>
-                <div id="add-file-icon">add file icon</div>
+                <div id="file-title">Shared Files</div>
+                <div class="file">
+                    <i class="material-icons" id="file-icon">file_copy</i>
+                    <div id="filename">assignment2.png </div>
+                </div>
+                <div class="file">
+                    <i class="material-icons" id="file-icon">file_copy</i>
+                    <div id="filename"> assignment1.pdf</div>
+                </div>
+                <div class="file">
+                    <i class="material-icons" id="file-icon">file_copy</i>
+                    <div id="filename">assignment1.csv </div>
+                </div>
+                <div id="add-file-icon">
+                  <i class="material-icons" id="attach-file">note_add</i>
+                </div>
             </div>
         </div>
 
