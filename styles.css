@@ -141,8 +141,39 @@ body {
     flex: 1;
     flex-direction: row;
     display: flex;
+    align-items: center;
 }
+.taskboard-create{
+    margin-left:80px;
+    border-radius: 80px;
+    size: 80px;
+    height: 80px;
+    width: 80px;
+    border-style: dashed;
+    border-color: rgb(204, 204, 204);
+    font-size: 50px;
+    color: rgb(204, 204, 204);;
+    text-align: center;
+    line-height: 80px;
+    border-width: 2px}
 
+    .taskboard-section-create{
+        flex: 1;
+        display: flex;
+        margin: 30 10 0 10;
+        height: 80%;
+        min-width: 250px;
+        max-width: 350px;
+        overflow: hidden;
+        align-items: center;
+        }
+    
+  
+  .taskboard-create:hover {
+    transform: scale(1.1);
+    }
+
+    
 .taskboard-section {
   flex: 1;
   margin: 30 10 0 10;
@@ -153,6 +184,7 @@ body {
   box-shadow:rgba(0, 0, 0, 0.623);
   height: 80%;
   min-width: 250px;
+  max-width:  350px;
   overflow: hidden;
   background-color: rgb(204, 204, 204);
 }
@@ -188,8 +220,9 @@ body {
 
 .devs {
     width: 200px;
-    height: 200px;
-    margin-bottom: -25px;
+  height: 200px;
+  padding-bottom: -50px;
+  margin-bottom: -10px;
 }
 
 #workspace-select {
@@ -201,15 +234,12 @@ body {
     margin-bottom: 30px;
     padding: 5 0 5 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#workspace-select-devs {
+    text-align: center;
+  }
+  
+  #workspace-select-group {
     margin: auto;
-}
-
-#workspace-select-arrow {
-    margin-right: 5px;
-}
+  }
 
 #file-menu-top {
     display: flex;
