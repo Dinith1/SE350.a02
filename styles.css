@@ -193,7 +193,8 @@ body {
     color: rgb(204, 204, 204);;
     text-align: center;
     line-height: 80px;
-    border-width: 2px}
+    border-width: 2px;
+    padding: 0 2 5 2}
 
     .taskboard-section-create{
         flex: 1;
@@ -436,11 +437,6 @@ body {
     font-size: 30px;
     justify-content: center;
     align-self: center;
-}
-
-#team {
-    padding-bottom: 10px;
-    background-color: blue;
 }
 
 #add-task {
