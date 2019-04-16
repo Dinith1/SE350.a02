@@ -220,7 +220,8 @@ body {
   border-color: rgb(204, 204, 204);
   border-radius: 10px;
   box-shadow:rgba(0, 0, 0, 0.623);
-  height: 80%;
+  height: auto;
+  max-height: 80%;
   min-width: 250px;
   max-width:  500px;
   overflow: hidden;
