@@ -163,7 +163,18 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     align-content: flex-start;
-    
+}
+
+.task-category-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#task-ellipses {
+    margin: 9 15 12 0;
+    color: rgb(53, 53, 53);
+    align-self: flex-end;
 }
 
 #file-menu {
