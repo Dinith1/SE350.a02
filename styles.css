@@ -80,11 +80,11 @@ body {
 }
 
 #task-board-header {
-    background-color: rgb(124, 10, 10);
+    background-color: rgba(0, 0, 0, 0.623);
     flex: 1;
     display: flex;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
+    /* border-bottom-width: 3px;
+    border-bottom-style: solid; */
     flex-direction: row;
     padding-bottom: 10px;
 }
@@ -133,6 +133,8 @@ body {
   overflow-x:scroll;
   position:relative;
   padding: 10 10 0 10;
+  background-image: url("./bg.jpg");
+  background-size: 1500px;
 }
 
 #task-board-container {
@@ -148,7 +150,7 @@ body {
   color: black;
   border-width: 3px;
   border-style: solid;
-  border-color: #393D3F;
+  border-color: white;
   border-radius: 15px;
   box-shadow:black;
   height: 80%;
