@@ -262,7 +262,7 @@ body {
     flex: 1;
 }
 .tasks:hover{
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
 }
 .tasks {
     margin: 5 10 10 10;
