@@ -519,7 +519,7 @@ body {
 
 #whiteboard-screen {
   margin-top: 30px;
-  height: 500px;
+  height: 600px;
 }
 
 #back-button {
@@ -564,7 +564,7 @@ body {
 .task-logs {
   padding: 10px;
   width: 100%;
-  height: 90%;
+  height: 80%;
   background: #eee;
   overflow-x: hidden;
   overflow-y: scroll;
