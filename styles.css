@@ -19,7 +19,7 @@ body {
     align-content: inline-block;
     flex-direction: row;
     display: flex;
-    background-color: #393D3F;
+    background-color: #f2f2f2;
     width: auto;
     height: 100%;
     cursor: default;
@@ -28,69 +28,94 @@ body {
 
 #group-menu {
     flex: 2;
-    padding: 20px;
-    margin-left: 10px;
+    /* padding: 20px;
+    margin-left: 10px; */
     border-style: solid;
-    border-width: 0 2 0 0;
-    text-align: center;
+    border-width: 0 0 0 0;
+    text-align: left;
     margin-top: -40px;
 }
 
+#menu-top {
+    padding: 10 15 0 15 ;
+}
+
 #menu-bottom {
-    border-top-style: dashed;
-    padding-top: 15px;
-    text-align: center;
+    padding-top: 1px;
+    text-align: left;;
     top: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: flex-start;
+    background-color: white;
+}
+
+#selected-group {
+    
 }
 
 .group {
-    border-width: 1 1 1 1;
-    border-style: solid;
-    margin: 15 3 3 3;
     height: 80px;
-    width: 80%;
+    margin: 3 0 0 0;
+    border-bottom: 0px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 30px;
     align-items: center;
     font-size: 25px;
-    border-width: 3px;
-    border-radius: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: #393D3F;
+     /* border-style: solid; */
+    /* border-width: 3px;
+    border-radius: 10px; */
+    /* background-color: rgb(27, 95, 100); */
+    /* border-color: white; */
 }
+
 #group-create {
-    border-style: dashed;
-    border-width: 2;
+    padding-left: 0px;
+    justify-content: center;
 }
+
 
 .group:hover {
     transform: scale(1.1);
 }
 
-.devs:hover {
+/* .devs:hover {
     transform: scale(1.1);
-}
+} */
 
 #task-board {
     flex: 10;
     width: auto;
     display: flex;
     flex-direction: column;
+    align-content: space-between
 }
 
 #task-board-header {
-    background-color: bisque;
+    background-color: rgb(21, 23, 24);
     flex: 1;
     display: flex;
+    /* border-bottom-width: 3px;
+    border-bottom-style: solid; */
     flex-direction: row;
+    padding-bottom: 10px;
 }
 
 #task-board-title {
   flex: 4;
+  padding: 20 5 5 40;
+  font-size: 30px;
   justify-content: center;
-  color: black;
+  color: white;
+  font-weight: lighter;
+  font-family: sans-serif;
   align-items: center;
 }
 
@@ -99,10 +124,15 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  align-content: flex-end;
+  justify-content: flex-end;
+  padding-right: 15px;
 }
 
 .team-member {
   color: black;
+  margin-left: -8px;
+  size: 50px;
 }
 
 .member-logo {
@@ -111,8 +141,46 @@ body {
   border-radius: 40px;
 }
 
+.task-member-logo {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin-left: -8px;
+}
+
+.extra-members {
+    margin-left: -8px;
+    line-height: 30px;
+    color:white;
+    border-style: solid;
+    background-color: rgba(173, 173, 173, 0.849);
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border-width: 3px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+   }
+
+.priority {
+    margin: 10 3 0 0;
+    color:rgb(27, 95, 100);
+    border-style: solid;
+    border-color: rgb(27, 95, 100);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-top: 1px;
+}
+
 #task-board-body {
-  flex: 8;
+  flex: 20;
   display: inline-flex;
   width: auto;
   align-content: space-between;
@@ -122,43 +190,150 @@ body {
   overflow-x:scroll;
   position:relative;
   padding: 10 10 0 10;
+  background-image: url("./bg.jpg");
+  background-size: 1500px;
 }
 
 #task-board-container {
     flex: 1;
     flex-direction: row;
     display: flex;
+    align-items: flex-start;
 }
+.taskboard-create{
+    margin-left:100px;
+    border-radius: 80px;
+    size: 80px;
+    height: 80px;
+    width: 80px;
+    border-style: dashed;
+    border-color: rgb(204, 204, 204);
+    font-size: 50px;
+    color: rgb(204, 204, 204);;
+    text-align: center;
+    line-height: 80px;
+    border-width: 2px;
+    padding: 0 2 5 2}
 
+    .taskboard-section-create{
+        flex: 1;
+        display: flex;
+        margin: 30 10 0 10;
+        height: 80%;
+        min-width: 250px;
+        max-width: 500px;
+        overflow: hidden;
+        align-items: center;
+        }
+    
+  
+  .taskboard-create:hover {
+    transform: scale(1.1);
+    }
+
+    
 .taskboard-section {
-  text-align: center;
   flex: 1;
-  margin: 0 10 0 10;
-  color: black;
+  margin: 30 10 0 10;
   border-width: 3px;
   border-style: solid;
-  border-color: #393D3F;
-  border-radius: 15px;
-  box-shadow:black;
-  height: 80%;
+  border-color: rgb(204, 204, 204);
+  border-radius: 10px;
+  box-shadow:rgba(0, 0, 0, 0.623);
+  height: auto;
+  max-height: 80%;
   min-width: 250px;
+  max-width:  500px;
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(204, 204, 204);
+  overflow-y:scroll;
+}
+
+.task-board-title {
+    padding: 15 10 10 15;
+    color: rgb(53, 53, 53);
+    font-family: sans-serif;
+    font-weight: bold;
+    align-content: flex-start;
+    flex-direction: row;
+    display: flex;
+}
+
+.task-category-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#task-ellipses {
+    margin: 9 15 12 0;
+    color: rgb(53, 53, 53);
+    align-self: flex-end;
+}
+
+.task-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    flex: 1;
+}
+.tasks:hover{
+  background-color: #f2f2f2;
+}
+.tasks {
+    margin: 5 10 10 10;
+    justify-items: center;
+    background-color: white;
+    width: 90%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px; 
+    color: rgb(53, 53, 53);
+    box-shadow: #393D3F;
+}
+
+.task-name {
+    padding: 5 0 5 0;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 13px;
+}
+
+.task-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 7px;
+    padding-bottom: 10px;
+}
+
+#draggable:hover {
+    transform: scale(1.1);
 }
 
 #file-menu {
     flex: 2;
     padding: 0px;
     margin: 0px;
-    border-style: solid;
-    border-width: 0 0 0 2;
+    /* border-style: solid;
+    border-width: 0 0 0 2; */
 
 }
 
 .devs {
     width: 200px;
-    height: 200px;
-    margin-bottom: -25px;
+  height: 200px;
+  padding-bottom: -50px;
+  margin-bottom: -10px;
 }
 
 #workspace-select {
@@ -169,23 +344,21 @@ body {
     border-style: solid;
     margin-bottom: 30px;
     padding: 5 0 5 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#workspace-select-devs {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  #workspace-select-group {
     margin: auto;
-}
-
-#workspace-select-arrow {
-    margin-right: 5px;
-}
+  }
 
 #file-menu-top {
     display: flex;
-    border-width: 0 0 2 0;
-    height: 100px;
-    border-style: solid;
-
+    flex: 2;
+    background-color: #f2f2f2;
+    /* border-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: rgb(27, 95, 100); */
 }
 
 #profile-pic {
@@ -204,7 +377,7 @@ body {
 }
 
 #online-status-black {
-    color: #393D3F;
+    color: #f2f2f2;
     font-size: 23px;
     position: absolute;
     margin: -38.5 0 0 65;
@@ -225,16 +398,21 @@ body {
 }
 #file-menu-bottom {
     display: flex;
+    flex: 10;
     flex-direction: column;
+    background-color: white;
+
 
 }
 
 #file-title {
-  padding-bottom: 20px;
-  padding-top: 5px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 25px;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
   margin: auto;
+  color: #393D3F;
 }
 
 .file {
@@ -252,17 +430,25 @@ body {
 
 #filename {
   font-size: 15px;
+  font-family: sans-serif;
+  color: #393D3F;
 }
 
 #file-icon {
   font-size: 20px;
   padding-right: 8px;
+  color: #393D3F;
 }
 
 #add-file-icon {
     position: absolute;
     bottom: 5;
     right: 5;
+    color: #393D3F;
+}
+
+#add-file-icon:hover {
+    transform: scale(1.1);
 }
 
 #attach-file {
@@ -271,18 +457,42 @@ body {
 
 #user {
     margin-top: 28px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
+    color: rgb(27, 95, 100);
 }
 
 #user-status {
-    margin: 21 0 0 -10;
+    margin: 10 0 0 -10;
     font-size: 10px;
     font-weight: lighter;
     font-family: sans-serif;
 }
 
-/* CSS for Whiteboard Section */
+#username {
+    margin: 8 0 0 -10;
+    font-family: sans-serif;
+    font-weight: bold;
+}
 
+#heart {
+    color: red;
+    font-size: 30px;
+    justify-content: center;
+    align-self: center;
+}
+
+#add-task {
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    align-self: center;
+    border-left-style: solid;
+    border-left-color: grey;
+    border-left-width: 2px;
+    padding-left: 10px;
+}
+
+/* CSS for Whiteboard Section */
 #whiteboard-container {
   display: flex;
   flex-direction: row;
@@ -356,3 +566,33 @@ body {
 .task-details {
   margin-top: 20px;
 }
+.invite-button {
+    width: 70px;
+    height: 28px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-bottom: 7px;
+    margin-right: 20px;
+    justify-content: center;
+    font-family: sans-serif;
+    color: rgb(27, 95, 100);
+}
+
+.invite-button:hover {
+    transform: scale(1.05);
+    background-color: rgb(27, 95, 100);
+  }
+
+#invite-text {
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    margin: auto;
+    align-self: center;
+}
+
+
+
+
