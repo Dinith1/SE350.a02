@@ -737,6 +737,14 @@ body {
   border-style: solid;
 }
 
+.modal-form {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
 .modal-body {
   flex: 10;
 }

@@ -55,7 +55,44 @@
                                 <h4 class="modal-title">New Task</h4>
                             </div>
                             <div class="modal-body">
-                                <p>Some text in the modal.</p>
+                                <div class="modal-form" id="board-select-form">
+                                    <div>Board</div>
+                                    <div>
+                                        <select id="workspace-select">
+                                            <option id="workspace-select-group">To Do</option>
+                                            <option id="workspace-select-group">In Progress</option>
+                                            <option id="workspace-select-group">Completed</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="modal-form" id="task-name-form">
+                                    <div>Name</div>
+                                    <div>
+                                        <textarea rows="1"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-form" id="task-description-form">
+                                    <div>Description</div>
+                                    <div>
+                                        <textarea rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-form" id="effort-deadline-form">
+                                    <div>Effort</div>
+                                    <div>
+                                            <textarea rows="1"></textarea>
+                                    </div>
+                                    <div>Deadline</div>
+                                    <div>
+                                        <textarea rows="1"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-form" id="people-form">
+                                    <div>People</div>
+                                    <div>
+                                        <textarea rows="1"></textarea>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="cancel-modal" data-dismiss="modal">OK</button>
