@@ -69,7 +69,13 @@ body {
   }
   
   .group:hover {
-    transform: scale(1.1);
+    border-width: 1 1 1 1;
+    border-style: solid;
+    width: 85%;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: rgba(173, 173, 173, 0.849);;
+
   }
   
   /* .devs:hover {
