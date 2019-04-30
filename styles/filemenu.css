@@ -1,0 +1,170 @@
+#file-menu {
+    flex: 2;
+    padding: 0px;
+    margin: 0px;
+    /* border-style: solid;
+        border-width: 0 0 0 2; */
+}
+
+.devs {
+    width: 200px;
+    height: 200px;
+    padding-bottom: -50px;
+    margin-bottom: -10px;
+}
+
+#workspace-select {
+    display: flex;
+    width: 100%;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-bottom: 30px;
+    padding: 5 0 5 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#workspace-select-group {
+    margin: auto;
+}
+
+#file-menu-top {
+    display: flex;
+    flex: 2;
+    background-color: #f2f2f2;
+    /* border-style: solid;
+        border-bottom-width: 3px;
+        border-bottom-color: rgb(27, 95, 100); */
+}
+
+#profile-pic {
+    padding: 20 20 20 20;
+    border-style: hidden;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+}
+
+#online-status {
+    color: rgb(0, 199, 0);
+    font-size: 15px;
+    position: absolute;
+    margin: -35 0 0 65;
+}
+
+#online-status-black {
+    color: #f2f2f2;
+    font-size: 23px;
+    position: absolute;
+    margin: -38.5 0 0 65;
+    margin-left: 61.5;
+}
+
+#fullscreen-icon {
+    position: absolute;
+    right: 5;
+}
+
+#fullscreen {
+    font-size: 30px;
+}
+
+#fullscreen:hover {
+    transform: scale(1.1);
+}
+
+#file-menu-bottom {
+    display: flex;
+    flex: 10;
+    flex-direction: column;
+    background-color: white;
+}
+
+#file-title {
+    padding-bottom: 30px;
+    padding-top: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
+    color: #393D3F;
+}
+
+.file {
+    margin: 3 0 0 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.file:hover {
+    transform: scale(1.05);
+}
+
+#filename {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #393D3F;
+}
+
+#file-icon {
+    font-size: 20px;
+    padding-right: 8px;
+    color: #393D3F;
+}
+
+#add-file-icon {
+    position: absolute;
+    bottom: 5;
+    right: 5;
+    color: #393D3F;
+}
+
+#add-file-icon:hover {
+    transform: scale(1.1);
+}
+
+#attach-file {
+    font-size: 40px;
+}
+
+#user {
+    margin-top: 28px;
+    font-family: sans-serif;
+    color: rgb(27, 95, 100);
+}
+
+#user-status {
+    margin: 10 0 0 -10;
+    font-size: 10px;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+#username {
+    margin: 8 0 0 -10;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#heart {
+    color: red;
+    font-size: 30px;
+    justify-content: center;
+    align-self: center;
+}
+
+#add-task {
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    align-self: center;
+    border-left-style: solid;
+    border-left-color: grey;
+    border-left-width: 2px;
+    padding-left: 10px;
+    cursor: pointer;
+}

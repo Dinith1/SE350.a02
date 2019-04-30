@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MisCom</title>
     <!-- Main stylesheet -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/taskboardscreen.css">
+    <link rel="stylesheet" href="./styles/teammenu.css">
+    <link rel="stylesheet" href="./styles/newtask.css">
+    <link rel="stylesheet" href="./styles/filemenu.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Bootstrap for modal-->
@@ -16,10 +19,11 @@
 </head>
 
 <body>
+    <!-- Team Menu -->
     <div id="container">
         <div id="group-menu">
             <div id="menu-top">
-                <div id="logo"><img class="devs" src="./Logo_White_Inside.png"></div>
+                <div id="logo"><img class="devs" src="./resources/Logo_White_Inside.png"></div>
                 <select id="workspace-select">
                     <option id="workspace-select-group">DEVS</option>
                     <option id="workspace-select-group">SESA</option>
@@ -38,13 +42,16 @@
 
             </div>
         </div>
+        <!-- End Team Menu -->
 
+        <!-- Taskboard Menu -->
         <div id="task-board">
             <div id="task-board-header">
                 <div id="task-board-title">
                     Marketing
                     <i class="material-icons" id="heart">favorite_border</i>
-                    <a data-toggle="modal" data-target="#myModal"><i class="material-icons" id="add-task">library_add</i></a>
+                    <a data-toggle="modal" data-target="#myModal"><i class="material-icons"
+                            id="add-task">library_add</i></a>
                 </div>
 
                 <!-- Modal -->
@@ -80,7 +87,7 @@
                                 <div class="modal-form" id="effort-deadline-form">
                                     <div>Effort</div>
                                     <div>
-                                            <textarea rows="1"></textarea>
+                                        <textarea rows="1"></textarea>
                                     </div>
                                     <div>Deadline</div>
                                     <div>
@@ -101,23 +108,23 @@
                         </div>
                     </div>
                 </div>
-                <!-- Modal Finishes -->
-                
+                <!-- End Modal -->
+
                 <div id="members-list">
                     <div class="team-member">
-                        <div id="logo"><img class="member-logo" src="hong.jpg"></div>
+                        <div id="logo"><img class="member-logo" src="./resources/hong.jpg"></div>
                     </div>
                     <div class="team-member">
-                        <div id="logo"><img class="member-logo" src="allen.jpg"></div>
+                        <div id="logo"><img class="member-logo" src="./resources/allen.jpg"></div>
                     </div>
                     <div class="team-member">
-                        <div id="logo"><img class="member-logo" src="richard.jpg"></div>
+                        <div id="logo"><img class="member-logo" src="./resources/richard.jpg"></div>
                     </div>
                     <div class="team-member">
-                        <div id="logo"><img class="member-logo" src="vee.jpg"></div>
+                        <div id="logo"><img class="member-logo" src="./resources/vee.jpg"></div>
                     </div>
                     <div class="team-member">
-                        <div id="logo"><img class="member-logo" src="dins.jpg"></div>
+                        <div id="logo"><img class="member-logo" src="./resources/dins.jpg"></div>
                     </div>
                 </div>
                 <div class="invite-button">
@@ -143,9 +150,9 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="richard.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="vee.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="allen.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
                                         <div class="extra-members">
                                             <div class="extra-text">+2</div>
                                         </div>
@@ -163,8 +170,8 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="vee.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="dins.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
                                     </div>
                                     <div class="priority">8</div>
                                 </div>
@@ -180,8 +187,8 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="richard.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg"></div>
                                     </div>
                                     <div class="priority">2</div>
                                 </div>
@@ -196,8 +203,8 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="allen.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="hong.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
                                     </div>
                                     <div class="priority">5</div>
                                 </div>
@@ -212,9 +219,9 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="richard.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="vee.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="dins.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
                                     </div>
                                     <div class="priority">13</div>
                                 </div>
@@ -230,7 +237,7 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="richard.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg"></div>
                                     </div>
                                     <div class="priority">3</div>
                                 </div>
@@ -245,7 +252,7 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="allen.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
                                     </div>
                                     <div class="priority">2</div>
                                 </div>
@@ -260,9 +267,9 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="dins.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="allen.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
                                     </div>
                                     <div class="priority">8</div>
                                 </div>
@@ -285,10 +292,10 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="richard.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="dins.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="allen.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
 
                                     </div>
                                     <div class="priority">11</div>
@@ -304,7 +311,7 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="hong.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
                                     </div>
                                     <div class="priority">3</div>
                                 </div>
@@ -319,26 +326,16 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="richard.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="vee.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
 
                                     </div>
                                     <div class="priority">8</div>
                                 </div>
                             </div>
-
-
-
                         </div>
-
-
-
-
                     </div>
-
-
-
 
 
                     <div class="taskboard-section">
@@ -347,9 +344,7 @@
                             <div class="material-icons" id="task-ellipses">more_horiz</div>
                         </div>
 
-
                         <div class="tasks-container">
-
                             <div class="tasks">
                                 <div class="task-settings">
                                     <div class="task-name">Workshop #1 - schedule and organise rooms</div>
@@ -359,7 +354,7 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="dins.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
 
                                     </div>
                                     <div class="priority">5</div>
@@ -375,8 +370,8 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="vee.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="allen.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
                                     </div>
                                     <div class="priority">3</div>
                                 </div>
@@ -391,9 +386,9 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="richard.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="dins.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
 
                                     </div>
                                     <div class="priority">5</div>
@@ -409,33 +404,31 @@
                                 </div>
                                 <div class="task-settings">
                                     <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="vee.jpg"></div>
+                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
 
                                     </div>
                                     <div class="priority">8</div>
                                 </div>
                             </div>
-
-
-
                         </div>
 
-
-
                     </div>
+
                     <div class="taskboard-section-create">
-                        <div class="taskboard-create">
-                            +
-                        </div>
+                        <div class="taskboard-create">+</div>
                     </div>
+
                 </div>
             </div>
         </div>
+        <!-- EndTaskboard Menu -->
 
+
+        <!-- File Menu -->
         <div id="file-menu" class="right-tab">
             <div id="file-menu-top">
                 <div id="profile-pic-div">
-                    <img id="profile-pic" src="maya_watermelon.jpg" alt="">
+                    <img id="profile-pic" src="./resources/maya_watermelon.jpg" alt="">
                     <i class="material-icons" id="online-status-black">brightness_1</i>
                     <i class="material-icons" id="online-status">brightness_1</i>
                 </div>
@@ -466,6 +459,7 @@
                 </div>
             </div>
         </div>
+        <!-- End File Menu -->
     </div>
 </body>
 
