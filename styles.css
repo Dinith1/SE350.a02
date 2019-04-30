@@ -536,7 +536,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  background-color: slategray;
+  background-color: #eee;
   text-align: center;
   border-width: 3 3 0 3;
   border-radius: 3px;
@@ -561,13 +561,19 @@ body {
   background: #eee;
 }
 
+.task-info {
+    height: 30%;
+    background-color: #52ca9c;
+}
+
 .task-logs {
-  padding: 10px;
+  padding: 20px;
   width: 100%;
-  height: 80%;
+  height: 50%;
   background: #eee;
   overflow-x: hidden;
   overflow-y: scroll;
+  border: 1px solid #000;
 }
 
 .task-form textarea::-webkit-scrollbar {
