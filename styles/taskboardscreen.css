@@ -12,8 +12,6 @@
   background-color: rgb(21, 23, 24);
   flex: 1;
   display: flex;
-  /* border-bottom-width: 3px;
-      border-bottom-style: solid; */
   flex-direction: row;
   padding-bottom: 10px;
 }
@@ -38,6 +36,34 @@
   justify-content: flex-end;
   padding-right: 15px;
 }
+
+.invite-button {
+  width: 70px;
+  height: 28px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  align-self: flex-end;
+  margin-bottom: 7px;
+  margin-right: 20px;
+  justify-content: center;
+  font-family: sans-serif;
+  color: rgb(27, 95, 100);
+}
+
+.invite-button:hover {
+  transform: scale(1.05);
+  background-color: rgb(27, 95, 100);
+}
+
+#invite-text {
+  color: white;
+  padding-top: 5px;
+  text-align: center;
+  margin: auto;
+  align-self: center;
+}
+
 
 .team-member {
   color: black;
@@ -121,7 +147,6 @@
   border-color: rgb(204, 204, 204);
   font-size: 50px;
   color: rgb(204, 204, 204);
-  ;
   text-align: center;
   line-height: 80px;
   border-width: 2px;
