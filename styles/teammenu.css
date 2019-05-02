@@ -53,12 +53,10 @@ body {
   font-size: 25px;
   font-family: sans-serif;
   font-weight: 200;
-  /* color: #393D3F; */
-  /* border-style: solid; */
-  /* border-width: 3px;
-        border-radius: 10px; */
-  /* background-color: rgb(27, 95, 100); */
-  /* border-color: white; */
+}
+
+#selected-group {
+  color: rgb(48, 232, 238);
 }
 
 #group-create {
@@ -69,7 +67,7 @@ body {
 #group-create-button {
   padding: 10px;
   border-style: solid;
-  border: 2px solid rgb(27, 95, 100);
+  border: 2px solid rgb(48, 232, 238);
   border-radius: 5px;
   align-self: flex-end;
   margin-bottom: 7px;
@@ -80,19 +78,11 @@ body {
 
 #group-create-button:hover {
   transform: scale(1.05);
-  background-color: rgb(27, 95, 100);
+  background-color: rgb(48, 232, 238);
+  cursor: pointer;
 }
 
 .group:hover {
-  border-width: 1 1 1 1;
-  border-style: solid;
-  width: 85%;
-  border-width: 3px;
-  border-radius: 10px;
-  border-color: rgba(173, 173, 173, 0.849);
-  ;
+  color: rgb(48, 232, 238);
+  cursor: pointer;
 }
-
-/* .devs:hover {
-        transform: scale(1.1);
-    } */

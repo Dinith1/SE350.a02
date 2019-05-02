@@ -123,7 +123,8 @@
 }
 
 .file:hover {
-    transform: scale(1.05);
+    color: rgb(48, 232, 238);
+    cursor: pointer;
 }
 
 #filename {
