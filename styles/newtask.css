@@ -1,7 +1,7 @@
 /* New Task (Modal) */
 
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -14,11 +14,13 @@
 }
 
 .modal-content {
-  background-color: #f5f5f5;
+  font-family: sans-serif;
+  color: #f5f5f5;
+  background-color: #222222;
   border-radius: 15px;
   margin: 5% auto;
   padding: 10px;
-  border: 1px solid #888;
+  border: 1px solid #222222;
   width: 30%;
   height: 75%;
   display: flex;
@@ -29,7 +31,7 @@
 .modal-header {
   flex: 1;
   text-align: center;
-  color: #393D3F;
+  /* color: #393D3F; */
   font-size: 20px;
   border-width: 0 0 1 0;
   border-style: solid;
@@ -41,7 +43,7 @@
 
 .modal-form {
   width: 100%;
-  color: black;
+  /* color: black; */
   display: flex;
   flex-direction: row;
   margin: 20px 10px;
@@ -75,11 +77,12 @@ textarea {
 .modal-footer {
   flex: 1;
   bottom: 5px;
-  color: #393D3F;
+  /* color: #393D3F; */
   border-width: 1 0 0 0;
   border-style: solid;
   text-align: right;
   vertical-align: center;
+  padding-top: 5px;
 }
 
 .cancel-modal {
@@ -91,4 +94,11 @@ textarea {
   background-color: rgb(235, 235, 235);
   box-shadow: none;
   border-radius: 3px;
+}
+
+.cancel-modal:hover {
+  transform: scale(1.1);
+  color: #f5f5f5;
+  background-color: rgb(27, 95, 100);
+  border-width: 0;
 }

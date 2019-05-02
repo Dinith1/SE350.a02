@@ -20,7 +20,7 @@
 }
 
 #task-board-header {
-  background-color: rgb(21, 23, 24);
+  background-color: #222222;
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -36,6 +36,25 @@
   font-weight: lighter;
   font-family: sans-serif;
   align-items: center;
+}
+
+#heart {
+  color: red;
+  font-size: 30px;
+  justify-content: center;
+  align-self: center;
+}
+
+#add-task {
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-self: center;
+  border-left-style: solid;
+  border-left-color: grey;
+  border-left-width: 2px;
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 #members-list {
