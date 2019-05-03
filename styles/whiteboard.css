@@ -72,25 +72,38 @@
     ;
     color: black;
   }
+
+  #right-whiteboard-box {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #description-box{
+    flex:1;
+    background-color:black;
+    max-height: 50%;
+  }
   
   #toolbar-icon:hover {
     transform: scale(1.1);
   }
   
   #task-details {
-    flex: 2;
-    position: relative;
+    flex: 1;
+    /* position: relative; */
     background: #eee;
+    max-height: 50%;
+    height: 50%;
   }
   
   .task-logs {
     padding: 10px;
     width: 100%;
-    height: 80%;
+    height:80%;
     background: #eee;
     overflow-x: hidden;
     overflow-y: scroll;
-    
   }
   
   .task-form textarea::-webkit-scrollbar {
