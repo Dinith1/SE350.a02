@@ -146,6 +146,10 @@
     color: #393D3F;
 }
 
+#add-task:hover {
+    transform: scale(1.1);
+}
+
 #add-file-icon:hover {
     transform: scale(1.1);
 }
