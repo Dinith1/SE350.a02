@@ -45,6 +45,10 @@
   font-size: 30px;
   justify-content: center;
   align-self: center;
+  padding-right: 15px;
+  border-right-style: solid;
+  border-right-color: grey;
+  border-right-width: 2px;
 }
 
 #add-task {
@@ -52,9 +56,6 @@
   font-size: 30px;
   justify-content: center;
   align-self: center;
-  border-left-style: solid;
-  border-left-color: grey;
-  border-left-width: 2px;
   padding-left: 10px;
   cursor: pointer;
 }
@@ -131,7 +132,7 @@
 }
 
 .priority {
-  margin: 10 3 0 0;
+  margin: 10 3 10 0;
   color: #222222;
   border-style: solid;
   border-color: #222222;
@@ -281,9 +282,4 @@
   justify-content: flex-start;
   padding-left: 7px;
   padding-bottom: 10px;
-}
-
-#draggable:hover {
-  transform: scale(1.1);
-  cursor: pointer;
 }

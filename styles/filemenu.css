@@ -55,7 +55,7 @@
 }
 
 #online-status-black {
-    color: #f2f2f2;
+    color: #222222;
     font-size: 23px;
     position: absolute;
     margin: -38.5 0 0 65;
@@ -144,6 +144,10 @@
     bottom: 5;
     right: 5;
     color: #393D3F;
+}
+
+#add-task:hover {
+    transform: scale(1.1);
 }
 
 #add-file-icon:hover {
