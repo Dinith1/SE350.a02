@@ -86,6 +86,7 @@
 #description-box {
   flex: 1;
   width: 350px;
+  height: 48%;
   margin: 20px auto;
   padding: 25px;
   background: #eee;
@@ -125,7 +126,7 @@
 }
 
 #description-members {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .task-details {
@@ -223,6 +224,7 @@
   margin: 20px auto;
   padding: 25px;
   width: 400px;
+  /* height: 20px; */
   min-width: 390px;
   border-radius: 10px;
   box-sizing: border-box;
