@@ -69,7 +69,6 @@
     font-size: 40px;
     margin-left: 20px;
     margin-top: 10px;
-    ;
     color: black;
   }
 
@@ -81,12 +80,21 @@
 
   #description-box{
     flex:1;
-    background-color:black;
+    background: #eee;
     max-height: 50%;
+    border-width:0.1;
+    border-color:rgb(200,200,200);
+    border-style:solid;
+    border-radius:10px;
+    padding:10;
   }
   
   #toolbar-icon:hover {
     transform: scale(1.1);
+  }
+
+  #toolbar-icon{
+    margin-top:22;
   }
   
   #task-details {
