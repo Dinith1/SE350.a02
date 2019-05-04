@@ -65,7 +65,6 @@ function createTask() {
     // Put Inner Container into Outer Container
     newTask.appendChild(newTaskContainer);
 
-
     // Put New Task into the Task Board
     var parent = document.getElementById(board);
     parent.appendChild(newTask);
