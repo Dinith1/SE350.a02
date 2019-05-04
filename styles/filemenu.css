@@ -96,6 +96,9 @@
 }
 
 #file-menu-bottom {
+    border-top-color: gray;
+    border-top-width: 0.5;
+    border-top-style: solid;
     display: flex;
     flex: 10;
     flex-direction: column;
@@ -117,7 +120,7 @@
 }
 
 #add-file-icon {
-    color: #393D3F;
+    color: #f2f2f2;
     margin: 7px;
 }
 
