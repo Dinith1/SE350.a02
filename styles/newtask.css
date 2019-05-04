@@ -99,6 +99,6 @@ textarea {
 .cancel-modal:hover {
   transform: scale(1.1);
   color: #f5f5f5;
-  background-color: rgb(27, 95, 100);
+  background-color: rgb(27, 108, 110);
   border-width: 0;
 }

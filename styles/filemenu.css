@@ -65,7 +65,7 @@
 #user {
     margin-top: 28px;
     font-family: sans-serif;
-    color: rgb(48, 232, 238);
+    color: rgb(27, 108, 110);
 }
 
 #user-status {
@@ -103,6 +103,10 @@
     /* background-color: white; */
 }
 
+.files-header {
+    display: flex;
+}
+
 #file-title {
     padding-bottom: 30px;
     padding-top: 15px;
@@ -110,7 +114,20 @@
     font-weight: bold;
     font-size: 20px;
     margin: auto;
-    /* color: #393D3F; */
+}
+
+#add-file-icon {
+    color: #393D3F;
+    margin: 7px;
+}
+
+#attach-file {
+    font-size: 30px;
+}
+
+#add-file-icon:hover {
+    color: rgb(27, 108, 110);
+    transform: scale(1.1);
 }
 
 .file {
@@ -123,7 +140,7 @@
 }
 
 .file:hover {
-    color: rgb(48, 232, 238);
+    color: rgb(27, 108, 110);
     cursor: pointer;
 }
 
@@ -136,24 +153,9 @@
 #file-icon {
     font-size: 20px;
     padding-right: 8px;
-    color: rgb(48, 232, 238);
-}
-
-#add-file-icon {
-    position: absolute;
-    bottom: 5;
-    right: 5;
-    color: #393D3F;
+    color: rgb(27, 108, 110);
 }
 
 #add-task:hover {
     transform: scale(1.1);
-}
-
-#add-file-icon:hover {
-    transform: scale(1.1);
-}
-
-#attach-file {
-    font-size: 40px;
 }

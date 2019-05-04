@@ -56,7 +56,7 @@ body {
 }
 
 #selected-group {
-  color: rgb(48, 232, 238);
+  color: rgb(27, 108, 110);
 }
 
 #group-create {
@@ -67,7 +67,7 @@ body {
 #group-create-button {
   padding: 10px;
   border-style: solid;
-  border: 2px solid rgb(48, 232, 238);
+  border: 2px solid rgb(27, 108, 110);
   border-radius: 5px;
   align-self: flex-end;
   margin-bottom: 7px;
@@ -78,11 +78,11 @@ body {
 
 #group-create-button:hover {
   transform: scale(1.05);
-  background-color: rgb(48, 232, 238);
+  background-color: rgb(27, 108, 110);
   cursor: pointer;
 }
 
 .group:hover {
-  color: rgb(48, 232, 238);
+  color: rgb(27, 108, 110);
   cursor: pointer;
 }

@@ -80,12 +80,12 @@
   margin-bottom: 7px;
   margin-right: 20px;
   justify-content: center;
-  color: rgb(48, 232, 238);
+  color: rgb(27, 108, 110);
 }
 
 .invite-button:hover {
   transform: scale(1.05);
-  background-color: rgb(48, 232, 238);
+  background-color: rgb(27, 108, 110);
   color: #222222;
   cursor: pointer;
 }
@@ -226,6 +226,10 @@
   display: flex;
 }
 
+#attach-file {
+  font-size: 40px;
+}
+
 .task-category-header {
   display: flex;
   flex-direction: row;
@@ -283,3 +287,4 @@
   padding-left: 7px;
   padding-bottom: 10px;
 }
+

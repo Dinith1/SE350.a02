@@ -68,10 +68,10 @@
                             <div class="modal-form" id="board-select-form">
                                 <div class="modal-text">Board</div>
                                 <div class="modal-input">
-                                    <select id="workspace-select">
-                                        <option id="workspace-select-group">To Do</option>
-                                        <option id="workspace-select-group">In Progress</option>
-                                        <option id="workspace-select-group">Completed</option>
+                                    <select id="taskboard-select">
+                                        <option id="taskboard-select-group">To Do</option>
+                                        <option id="taskboard-select-group">In Progress</option>
+                                        <option id="taskboard-select-group">Completed</option>
                                     </select>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@
                             <div class="modal-form" id="task-name-form">
                                 <div class="modal-text">Name</div>
                                 <div class="modal-input">
-                                    <textarea placeholder="Enter task name" rows="1"></textarea>
+                                    <textarea id="name-select" placeholder="Enter task name" rows="1"></textarea>
                                 </div>
                             </div>
 
@@ -93,7 +93,7 @@
                             <div class="modal-form" id="effort-form">
                                 <div class="modal-text">Effort</div>
                                 <div class="modal-input">
-                                    <input placeholder="Enter effort number" type="number"></input>
+                                    <input id="effort-select" placeholder="Enter effort number" type="number"></input>
                                 </div>
                             </div>
 
@@ -130,7 +130,8 @@
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="cancel-modal" data-dismiss="modal">OK</button>
+                            <button type="button" class="cancel-modal" data-dismiss="modal"
+                                onclick="createTask()">OK</button>
                             <button type="button" class="cancel-modal" data-dismiss="modal">Cancel</button>
                         </div>
 
@@ -164,305 +165,329 @@
             <div id="task-board-body">
                 <div id="task-board-container">
 
+                    <!-- To Do Board -->
                     <div class="taskboard-section">
                         <div class="task-category-header">
                             <div class="task-board-title">To do</div>
                             <div class="material-icons" id="task-ellipses">edit</div>
                         </div>
 
-                        <div class="tasks-container">
+                        <div class="tasks-container" id="To-Do">
 
-                                <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Logistics Analysis</div>
+                            <a href="./whiteboard.html" style="text-decoration:none;">
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Logistics Analysis</div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                    </div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg">
+                                            </div>
+                                            <div class="extra-members">
+                                                <div class="extra-text">+2</div>
+                                            </div>
                                         </div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
-                                        <div class="extra-members">
-                                            <div class="extra-text">+2</div>
+                                        <div class="priority">11</div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="./whiteboard.html" style="text-decoration:none;">
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Design T-Shirts and logos</div>
+                                        <div class="material-icons" id="draggable">more_horiz</div>
+                                    </div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg">
+                                            </div>
                                         </div>
+                                        <div class="priority">8</div>
                                     </div>
-                                    <div class="priority">11</div>
                                 </div>
-                            </div>
-                        </a>
-
-
-                        <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Design T-Shirts and logos</div>
-                                        <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
-                                    </div>
-                                    <div class="priority">8</div>
-                                </div>
-                            </div>
                             </a>
 
                             <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Send feedback form to first event attendees - include
-                                        recordings</div>
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Send feedback form to first event attendees - include
+                                            recordings</div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                    </div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                            </div>
                                         </div>
+                                        <div class="priority">2</div>
                                     </div>
-                                    <div class="priority">2</div>
                                 </div>
-                            </div>
                             </a>
 
                             <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Plan contest guidelines</div>
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Plan contest guidelines</div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
                                     </div>
-                                    <div class="priority">5</div>
-                                </div>
-                            </div>
-                            </a>
-
-                            <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Code Website</div>
-                                        <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg">
+                                            </div>
                                         </div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
+                                        <div class="priority">5</div>
                                     </div>
-                                    <div class="priority">13</div>
                                 </div>
-                            </div>
                             </a>
 
-
                             <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Obtain all team member details & co-ordinate with
-                                        photographer</div>
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Code Website</div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                    </div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg">
+                                            </div>
                                         </div>
+                                        <div class="priority">13</div>
                                     </div>
-                                    <div class="priority">3</div>
                                 </div>
-                            </div>
                             </a>
 
 
                             <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Book lecture rooms in advance to upcoming events</div>
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Obtain all team member details & co-ordinate with
+                                            photographer</div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
                                     </div>
-                                    <div class="priority">2</div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="priority">3</div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
+
+
+                            <a href="./whiteboard.html" style="text-decoration:none;">
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Book lecture rooms in advance to upcoming events</div>
+                                        <div class="material-icons" id="draggable">more_horiz</div>
+                                    </div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="priority">2</div>
+                                    </div>
+                                </div>
                             </a>
 
                             <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Create group booklets</div>
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Create group booklets</div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
                                     </div>
-                                    <div class="priority">8</div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="priority">8</div>
+                                    </div>
                                 </div>
-                            </div>
                             </a>
                         </div>
                     </div>
+                    <!-- End To Do Board -->
 
-
+                    <!-- In Progress Board -->
                     <div class="taskboard-section">
                         <div class="task-category-header">
                             <div class="task-board-title">In Progress</div>
                             <div class="material-icons" id="task-ellipses">edit</div>
                         </div>
-                        <div class="tasks-container">
 
-
-                                <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Develop paper prototype through iterative user testing</div>
-                                        <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
-                                        </div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
-
-                                    </div>
-                                    <div class="priority">11</div>
-                                </div>
-                            </div>
-                            </a>
-
+                        <div class="tasks-container" id="In-Progress">
 
                             <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Pass on user feedback and design to tech team</div>
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Develop paper prototype through iterative user testing
+                                        </div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
                                     </div>
-                                    <div class="priority">3</div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg">
+                                            </div>
+
+                                        </div>
+                                        <div class="priority">11</div>
+                                    </div>
                                 </div>
-                            </div>
                             </a>
 
+                            <a href="./whiteboard.html" style="text-decoration:none;">
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Pass on user feedback and design to tech team</div>
+                                        <div class="material-icons" id="draggable">more_horiz</div>
+                                    </div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="priority">3</div>
+                                    </div>
+                                </div>
+                            </a>
 
                             <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Workshop #3 - organise pre-requisites and schedule</div>
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Workshop #3 - organise pre-requisites and schedule</div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
-                                        </div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
-
                                     </div>
-                                    <div class="priority">8</div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg">
+                                            </div>
+
+                                        </div>
+                                        <div class="priority">8</div>
+                                    </div>
                                 </div>
-                            </div>
                             </a>
                         </div>
                     </div>
+                    <!-- End In Progress Board -->
 
-
+                    <!-- Completed Board -->
                     <div class="taskboard-section">
                         <div class="task-category-header">
                             <div class="task-board-title">Completed</div>
                             <div class="material-icons" id="task-ellipses">edit</div>
                         </div>
 
-                        <div class="tasks-container">
-
-
-                                <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Workshop #1 - schedule and organise rooms</div>
-                                        <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
-
-                                    </div>
-                                    <div class="priority">5</div>
-                                </div>
-                            </div>
-                            </a>
-
+                        <div class="tasks-container" id="Completed">
 
                             <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Purchase merchandise</div>
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Workshop #1 - schedule and organise rooms</div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg"></div>
                                     </div>
-                                    <div class="priority">3</div>
-                                </div>
-                            </div>
-                            </a>
-
-
-                            <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Complete member forms and logistics from O-WEEK</div>
-                                        <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg"></div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo">
+                                                <img class="task-member-logo" src="./resources/dins.jpg">
+                                            </div>
                                         </div>
-                                        <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg"></div>
-
+                                        <div class="priority">5</div>
                                     </div>
-                                    <div class="priority">5</div>
                                 </div>
-                            </div>
                             </a>
 
                             <a href="./whiteboard.html" style="text-decoration:none;">
-                            <div class="tasks">
-                                <div class="task-settings">
-                                    <div class="task-name">Establish brand on social media</div>
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Purchase merchandise</div>
                                         <div class="material-icons" id="draggable">more_horiz</div>
-                                </div>
-                                <div class="task-settings">
-                                    <div class="task-details">
-                                        <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg"></div>
-
                                     </div>
-                                    <div class="priority">8</div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/allen.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="priority">3</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        </div>
+                            </a>
 
+                            <a href="./whiteboard.html" style="text-decoration:none;">
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Complete member forms and logistics from O-WEEK</div>
+                                        <div class="material-icons" id="draggable">more_horiz</div>
+                                    </div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/hong.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/richard.jpg">
+                                            </div>
+                                            <div id="logo"><img class="task-member-logo" src="./resources/dins.jpg">
+                                            </div>
+
+                                        </div>
+                                        <div class="priority">5</div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="./whiteboard.html" style="text-decoration:none;">
+                                <div class="tasks">
+                                    <div class="task-settings">
+                                        <div class="task-name">Establish brand on social media</div>
+                                        <div class="material-icons" id="draggable">more_horiz</div>
+                                    </div>
+                                    <div class="task-settings">
+                                        <div class="task-details">
+                                            <div id="logo"><img class="task-member-logo" src="./resources/vee.jpg">
+                                            </div>
+
+                                        </div>
+                                        <div class="priority">8</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+                    <!-- End Completed Board -->
 
                     <div class="taskboard-section-create">
                         <div class="taskboard-create">+</div>
@@ -490,7 +515,14 @@
                 </div>
             </div>
             <div id="file-menu-bottom">
-                <div id="file-title">Shared Files</div>
+                <div class="files-header">
+                    <div id="file-title">Shared Files</div>
+                    <div id="add-file-icon">
+                        <i class="material-icons" id="attach-file">note_add</i>
+                    </div>
+                </div>
+
+
                 <div class="file">
                     <i class="material-icons" id="file-icon">file_copy</i>
                     <div id="filename">assignment2.png </div>
@@ -503,13 +535,12 @@
                     <i class="material-icons" id="file-icon">file_copy</i>
                     <div id="filename">assignment1.csv </div>
                 </div>
-                <div id="add-file-icon">
-                    <i class="material-icons" id="attach-file">note_add</i>
-                </div>
             </div>
         </div>
         <!-- End File Menu -->
     </div>
 </body>
+
+<script src="./scripts/task.js"></script>
 
 </html>
