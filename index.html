@@ -52,8 +52,8 @@
                 <div id="task-board-title">
                     Marketing
                     <i class="material-icons" id="heart">favorite_border</i>
-                    <a data-toggle="modal" data-target="#myModal"><i class="material-icons"
-                            id="add-task">library_add</i></a>
+                    <a data-toggle="modal" data-target="#myModal" onclick="clearContributors()"><i
+                            class="material-icons" id="add-task">library_add</i></a>
                 </div>
 
                 <!-- Modal -->
@@ -107,10 +107,17 @@
                             <div class="modal-form" id="people-form">
                                 <div class="modal-text">People</div>
                                 <div class="modal-input">
-                                    <textarea placeholder="Enter contributors" rows="1"></textarea>
+                                    <input id="contributor-select" list="contributor-list"
+                                        placeholder="Enter contributors" onkeypress="addContributor()"></input>
+                                    <datalist id="contributor-list">
+                                        <option value="Hong Shi">
+                                        <option value="Vanessa Ciputra">
+                                        <option value="Allen Nian">
+                                        <option value="Richard Ng">
+                                        <option value="Dinith Wannigama">
+                                    </datalist>
                                     <div id="contributors-list">
-                                        <div class="team-member">
-                                            <div id="logo"><img class="member-logo" src="./resources/dins.jpg"></div>
+                                        <div class="team-member" id="modal-contributor-list">
                                         </div>
                                     </div>
                                 </div>

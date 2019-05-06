@@ -59,7 +59,13 @@
   padding-right: 15px;
 }
 
-#workspace-select {}
+.team-member {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 7px;
+  padding-bottom: 10px;
+}
 
 .modal-text {
   width: 20%;

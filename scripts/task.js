@@ -1,8 +1,16 @@
+var contributorList = {
+    hong: false,
+    vee: false,
+    allen: false,
+    rich: false,
+    dins: false
+}
+
 function createTask() {
     // Get the New Task input values
     var select = document.getElementById("taskboard-select");
     var board = select.options[select.selectedIndex].text;
-    board = board.replace(/ / ,"-");
+    board = board.replace(/ /, "-");
     var name = document.getElementById("name-select").value;
     var effort = document.getElementById("effort-select").value;
 
@@ -40,15 +48,59 @@ function createTask() {
     // Task Details
     var newTaskDetails = document.createElement('div');
     newTaskDetails.className = "task-details";
-    // Logo
+
+    // // Logo
+    // var newTaskLogo = document.createElement('div');
+    // newTaskLogo.id = "logo";
+    // var logo = document.createElement('img');
+    // logo.className = "task-member-logo";
+    // logo.src = "./resources/dins.jpg";
+    // newTaskLogo.appendChild(logo);
+    // // Put Logo into Task Details
+    // newTaskDetails.appendChild(newTaskLogo);
+
     var newTaskLogo = document.createElement('div');
     newTaskLogo.id = "logo";
-    var logo = document.createElement('img');
-    logo.className = "task-member-logo";
-    logo.src = "./resources/dins.jpg";
+
+    if (contributorList.hong) {
+        var logo = document.createElement('img');
+        logo.className = "task-member-logo";
+        logo.src = "./resources/hong.jpg";
+        newTaskLogo.appendChild(logo);
+    }
+
+    if (contributorList.vee) {
+        var logo = document.createElement('img');
+        logo.className = "task-member-logo";
+        logo.src = "./resources/vee.jpg";
+        newTaskLogo.appendChild(logo);
+    }
+
+    if (contributorList.allen) {
+        var logo = document.createElement('img');
+        logo.className = "task-member-logo";
+        logo.src = "./resources/allen.jpg";
+        newTaskLogo.appendChild(logo);
+    }
+
+    if (contributorList.rich) {
+        var logo = document.createElement('img');
+        logo.className = "task-member-logo";
+        logo.src = "./resources/richard.jpg";
+        newTaskLogo.appendChild(logo);
+    }
+
+    if (contributorList.dins) {
+        var logo = document.createElement('img');
+        logo.className = "task-member-logo";
+        logo.src = "./resources/dins.jpg";
+        newTaskLogo.appendChild(logo);
+    }
+
     newTaskLogo.appendChild(logo);
     // Put Logo into Task Details
     newTaskDetails.appendChild(newTaskLogo);
+
     // Priority
     var newTaskPriority = document.createElement('div');
     newTaskPriority.className = "priority";
@@ -69,4 +121,84 @@ function createTask() {
     var parent = document.getElementById(board);
     parent.appendChild(newTask);
 
+}
+
+function clearContributors() {
+    contributorList = {
+        hong: false,
+        vee: false,
+        allen: false,
+        rich: false,
+        dins: false
+    }
+}
+
+function addContributor() {
+    var key = window.event.keyCode;
+
+    // If the user has pressed enter
+    if (key === 13) {
+        var addCon = false;
+        var con = document.getElementById("contributor-select");
+        var conText = con.value;
+
+        // For creating a contributor image
+        var newCon = document.createElement('div');
+        newCon.id = "logo";
+        var newConImg = document.createElement('img');
+        newConImg.className = "member-logo";
+
+        if (conText === "Hong Shi") {
+            if (!contributorList.hong) {
+                contributorList.hong = true;
+                newConImg.src = "./resources/hong.jpg";
+                addCon = true;
+            }
+
+        } else if (conText === "Vanessa Ciputra") {
+            if (!contributorList.vee) {
+                contributorList.vee = true;
+                newConImg.src = "./resources/vee.jpg";
+                addCon = true;
+            }
+
+        } else if (conText === "Allen Nian") {
+            if (!contributorList.allen) {
+                contributorList.allen = true;
+                newConImg.src = "./resources/allen.jpg";
+                addCon = true;
+            }
+
+        } else if (conText === "Richard Ng") {
+            if (!contributorList.rich) {
+                contributorList.rich = true;
+                newConImg.src = "./resources/richard.jpg";
+                addCon = true;
+            }
+
+        } else if (conText === "Dinith Wannigama") {
+            if (!contributorList.dins) {
+                contributorList.dins = true;
+                newConImg.src = "./resources/dins.jpg";
+                addCon = true;
+            }
+        } else {
+            con.value = "Invalid Name";
+            con.style.color = "red";
+            return false;
+        }
+
+        con.value = "";
+        if (addCon) {
+            newCon.appendChild(newConImg);
+            var conList = document.getElementById("modal-contributor-list");
+            conList.appendChild(newCon);
+        }
+        return false;
+    }
+    else {
+        var con = document.getElementById("contributor-select");
+        con.style.color = "black";
+        return true;
+    }
 }
