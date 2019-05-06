@@ -49,16 +49,7 @@ function createTask() {
     var newTaskDetails = document.createElement('div');
     newTaskDetails.className = "task-details";
 
-    // // Logo
-    // var newTaskLogo = document.createElement('div');
-    // newTaskLogo.id = "logo";
-    // var logo = document.createElement('img');
-    // logo.className = "task-member-logo";
-    // logo.src = "./resources/dins.jpg";
-    // newTaskLogo.appendChild(logo);
-    // // Put Logo into Task Details
-    // newTaskDetails.appendChild(newTaskLogo);
-
+    // Logo
     var newTaskLogo = document.createElement('div');
     newTaskLogo.id = "logo";
 
