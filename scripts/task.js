@@ -111,7 +111,6 @@ function createTask() {
     // Put New Task into the Task Board
     var parent = document.getElementById(board);
     parent.appendChild(newTask);
-
 }
 
 function clearForm() {
@@ -127,8 +126,6 @@ function clearForm() {
     document.getElementById("effort-select").value = "";
     document.getElementById("deadline-select").value = "";
     document.getElementById("modal-contributor-list").innerHTML = '';
-
-    
 }
 
 function addContributor() {
