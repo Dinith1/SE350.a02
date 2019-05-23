@@ -52,8 +52,8 @@
                 <div id="task-board-title">
                     Marketing
                     <i class="material-icons" id="heart">favorite_border</i>
-                    <a data-toggle="modal" data-target="#myModal" onclick="clearContributors()"><i
-                            class="material-icons" id="add-task">library_add</i></a>
+                    <a data-toggle="modal" data-target="#myModal" onclick="clearForm()"><i
+                        onclick="clearForm()" class="material-icons" id="add-task">library_add</i></a>
                 </div>
 
                 <!-- Modal -->
@@ -86,7 +86,7 @@
                             <div class="modal-form" id="task-description-form">
                                 <div class="modal-text">Description</div>
                                 <div class="modal-input">
-                                    <textarea placeholder="Enter task description" rows=15></textarea>
+                                    <textarea id="description-select" placeholder="Enter task description" rows=15></textarea>
                                 </div>
                             </div>
 
@@ -100,7 +100,7 @@
                             <div class="modal-form" id="deadline-form">
                                 <div class="modal-text">Deadline</div>
                                 <div class="modal-input">
-                                    <input placeholder="Enter date"></input>
+                                    <input id="deadline-select" placeholder="Enter date"></input>
                                 </div>
                             </div>
 
@@ -108,7 +108,7 @@
                                 <div class="modal-text">People</div>
                                 <div class="modal-input">
                                     <input id="contributor-select" list="contributor-list"
-                                        placeholder="Enter contributors" onkeypress="addContributor()"></input>
+                                        placeholder="Enter contributors (press enter)" onkeypress="addContributor()"></input>
                                     <datalist id="contributor-list">
                                         <option value="Hong Shi">
                                         <option value="Vanessa Ciputra">

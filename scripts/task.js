@@ -111,17 +111,21 @@ function createTask() {
     // Put New Task into the Task Board
     var parent = document.getElementById(board);
     parent.appendChild(newTask);
-
 }
 
-function clearContributors() {
+function clearForm() {
     contributorList = {
         hong: false,
         vee: false,
         allen: false,
         rich: false,
         dins: false
-    }
+    };
+    document.getElementById("name-select").value = "";
+    document.getElementById("description-select").value = "";
+    document.getElementById("effort-select").value = "";
+    document.getElementById("deadline-select").value = "";
+    document.getElementById("modal-contributor-list").innerHTML = '';
 }
 
 function addContributor() {

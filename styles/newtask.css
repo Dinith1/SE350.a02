@@ -49,6 +49,10 @@
   margin: 20px 10px;
 }
 
+#contributor-select {
+  width: 80%;
+}
+
 #contributors-list {
   flex: 6;
   display: flex;
